@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav>
+    <div class="logo">&lt;Dev /&gt;</div>
+
+    <ul>
+      <li><a src="/About.html">About</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <button class="hire-btn">Hire Me</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="profile-img">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaiKiPcLJj7ufrj6M2KaPwyCT4lDSFA5oog&s" alt="Profile">
+</div>
+  <p class="hello">HELLO, I'M</p>
+
+  <h1>John Doe</h1>
+
+  <h2 class="typing">
+    <span id="text"></span><span class="cursor">|</span>
+  </h2>
+
+  <p class="desc">
+    I build responsive and user-friendly websites
+  </p>
+
+  <div class="buttons">
+    <button class="primary">
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      View Projects
+    </button>
+
+    <button class="secondary">
+      <i class="fa-regular fa-envelope"></i>
+      Contact Me
+    </button>
+  </div>
+</section>
+
+<section class="services">
+  <p class="subtitle">SERVICES</p>
+  <h2 class="title">What I Offer</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon"><i class="fas fa-palette"></i></div>
+      <h3>Web Design</h3>
+      <p>Creating visually appealing and intuitive user interfaces with modern design principles.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon"><i class="fas fa-code"></i></div>
+      <h3>Frontend Development</h3>
+      <p>Building responsive, performant websites using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon"><i class="fas fa-server"></i></div>
+      <h3>Basic Backend Development</h3>
+      <p>Server-side scripting with PHP and database management with SQL.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon"><i class="fas fa-plug"></i></div>
+      <h3>WordPress & API Integration</h3>
+      <p>WordPress customization and third-party API integrations for extended functionality.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!---------------- Cta section design----------------- -->
+<section class="resume-section">
+  <p class="subtitle">RESUME</p>
+  
+  <h2 class="title">My Experience</h2>
+  
+  <p class="description">
+    Download my resume to learn more about my education, experience, and skills.
+  </p>
+
+  <!-- Download Button -->
+  <a href="resume.pdf" download class="download-btn">
+    <i class="fas fa-download"></i>
+    Download Resume
+  </a>
+</section>
+
+<!-------------------Contact Section Design----------------->
+<div class="container">
+
+  <!-- LEFT FORM -->
+  <div class="form-box">
+    <h2>Get in Touch</h2>
+
+   <form id="contact-form">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Message" required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+
+<p id="success-msg" style="display:none; color:#fff;">
+  ✅ Message sent successfully!
+</p>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right">
+    <h3>Let’s connect</h3>
+    <p>
+      I’m always open to new opportunities and interesting projects.
+      Feel free to reach out!
+    </p>
+
+    <div class="icons">
+     <a href="tel:+919676526334" target="_blank">
+   <div class="icon">📞</div>
+     </a>
+     <a href="https://www.behance.net/nandinim10" >
+      <div class="icon">💼</div>
+      </a>
+      <a href="mailto:naganandinisri999@gmail.com" target="_blank">
+      <div class="icon">✉️</div>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!--------------Footer Design----------------->
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <h2 class="footer-title">John Doe</h2>
+
+    <p class="footer-text">
+      As a WordPress Developer, I design and develop fast, secure, and scalable websites tailored to client needs. 
+      I combine creativity with technical expertise to deliver seamless digital experiences. 
+      My goal is to build websites that are visually appealing and conversion-focused.
+    </p>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+
+  <!-- Behance -->
+  <a href="https://www.behance.net/nandinim10" target="_blank" class="icon">
+    <i class="fab fa-behance"></i>
+  </a>
+
+  <!-- Mail -->
+  <a href="mailto:naganandinisri999@gmail.com" class="icon">
+    <i class="fas fa-envelope"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/naganandini-mididoddi-b053b4260" target="_blank" class="icon">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+</div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright © 2026 <span>Naga Nandini</span></p>
+
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Blog</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
